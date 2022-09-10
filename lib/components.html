@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Component Library</title>
+  </head>
+  <body>
+    <h1>anupam's component library</h1>
+    <p>
+      I am attending neog.camp and I want to make a library which would make all
+      my projects look good and consistent
+    </p>
+
+    <hr />
+
+    <h2>@typography</h2>
+    <h1>This is the biggest heading</h1>
+    <h2>This is the second biggest</h2>
+    <p>
+      Let me show you a normal text. This is free flowing and will wrap at the
+      end like a paragraph
+    </p>
+    <small>This is a relatively smaller text</small>
+
+    <hr />
+
+    <h2>@container</h2>
+
+    <h3>fluid container</h3>
+    <div class="container-fluid">
+      This is a fluid container and it will fo till the end of the page
+    </div>
+
+    <h3>center container</h3>
+    <div class="container">
+      This is a centered container and it will go till the specified width
+    </div>
+
+    <hr />
+
+    <h2>@links</h2>
+    <!-- inline element they are -->
+    <a href="" class="primary-link link">Primary link</a>
+    <a href="" class="secondary-link link">Secondary link</a>
+
+    <hr />
+
+    <h2>@lists</h2>
+    <h3>unordered lists</h3>
+    <ul class="non-bullet">
+      <li>one</li>
+      <li>two</li>
+      <li>three</li>
+    </ul>
+
+    <h3>unordered inline list</h3>
+    <ul class="non-bullet">
+      <li class="list-item-inline">inlineOne</li>
+      <li class="list-item-inline">inlineTwo</li>
+      <li class="list-item-inline">inlineThree</li>
+    </ul>
+
+    <h3>ordered lists</h3>
+    <ol>
+      <li>one</li>
+      <li>two</li>
+      <li>three</li>
+    </ol>
+
+    <hr />
+
+    <h2>@nav</h2>
+    <nav class="navigation container">
+      <div>
+        <h3 class="nav-brand">iAmBrand</h3>
+        <ul class="non-bullet nav-pills">
+          <li class="list-item-inline">
+            <a class="link link-active" href="">home</a>
+          </li>
+          <li class="list-item-inline">
+            <a class="link" href="">products</a>
+          </li>
+          <li class="list-item-inline">
+            <a class="link" href="">about</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <hr />
+
+    <h2>@header</h2>
+    <header class="hero">
+      <img class="hero-img" src="../images/hero.svg" alt="" />
+      <h1 class="hero-heading">
+        anupam prakash the <span class="heading-inverted"> web developer</span>
+      </h1>
+    </header>
+
+    <hr />
+
+    <h2>@section</h2>
+    <section class="section">
+      <div class="container container-center">
+        <h1>white section</h1>
+        <p>
+          It's a lot of work to create a professional website, so if you're new
+          to web development, we encourage you to start small. You won't build
+          another Facebook right away, but it's not hard to make your own simple
+          website online, so we'll start there.
+        </p>
+      </div>
+    </section>
+
+    <section class="section off-white-section">
+      <div class="container container-center">
+        <h1>off white section</h1>
+        <p>
+          When it comes to tools for building a website, there's a lot to pick
+          from. If you're just starting, you might be confused by the array of
+          code editors, frameworks, and testing tools out there.
+        </p>
+      </div>
+    </section>
+
+    <hr />
+
+    <h2>@footer</h2>
+    <footer class="footer">
+      <div class="footer-header">header inside footer</div>
+      <ul class="social-links">
+        <li class="non-bullet list-item-inline">
+          <a class="link footer-link" href="">socialOne</a>
+        </li>
+        <li class="non-bullet list-item-inline">
+          <a class="link footer-link" href="">socialTwo</a>
+        </li>
+        <li class="non-bullet list-item-inline">
+          <a class="link footer-link" href="">socialThree</a>
+        </li>
+      </ul>
+    </footer>
+
+    <div style="height: 30vh"></div>
+  </body>
+</html>
