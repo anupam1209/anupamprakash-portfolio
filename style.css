@@ -115,7 +115,7 @@ hr{
 
 /* sections */
 .section{
-    padding: 1rem;
+    padding: 2rem;
 }
 
 .section  h1{
@@ -135,6 +135,7 @@ hr{
     text-align: center;
     color: #fff;
     border-top-right-radius: 1rem;
+    margin-top: 3rem;
 }
 
 .footer .footer-header{
