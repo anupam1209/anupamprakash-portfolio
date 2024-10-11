@@ -42,12 +42,23 @@ hr{
     background-color: var(--primary-color);
     border-radius: 0.5rem;
     color: #fff;
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.primary-link:hover {
+    background-color: #2b6cb0; /* Darker shade of primary color on hover */
 }
 
 .secondary-link{
     color: var(--primary-color);
     border-radius: 0.5rem;
     border: 1px solid var(--primary-color);
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.secondary-link:hover {
+    background-color: var(--primary-color); /* Change background color on hover */
+    color: #fff; /* Change text color on hover */
 }
 
 /* lists */
@@ -153,4 +164,115 @@ hr{
 
 .footer ul{
     padding-inline-start: 0px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    body {
+        padding: 0 1rem; /* Add some padding for mobile */
+    }
+
+    .container {
+        padding: 0 1rem; /* Adjust container padding */
+    }
+
+    .navigation {
+        flex-direction: column; /* Stack navigation items vertically */
+        text-align: center; /* Center align text */
+    }
+
+    .nav-pills {
+        padding: 0; /* Remove padding from nav pills */
+    }
+
+    .hero {
+        padding: 1rem 0; /* Adjust hero padding */
+    }
+
+    .hero .hero-img {
+        max-width: 100%; /* Make hero image responsive */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .section {
+        padding: 1rem; /* Adjust section padding */
+    }
+
+    .footer {
+        padding: 1rem; /* Adjust footer padding */
+    }
+
+    .footer-header {
+        font-size: 1.2rem; /* Adjust footer header font size */
+    }
+
+    .link {
+        display: block; /* Stack links vertically */
+        margin: 0.5rem 0; /* Add margin between links */
+    }
+}
+
+
+/* animations */
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+body {
+    animation: fadeIn 0.5s ease-in; /* Apply fade-in animation */
+}
+
+/* Slide-in animation */
+@keyframes slideIn {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.section {
+    opacity: 0; /* Start hidden */
+    animation: slideIn 0.5s forwards; /* Apply slide-in animation */
+}
+
+/* Add a delay for each section */
+.section:nth-child(1) { animation-delay: 0.1s; }
+.section:nth-child(2) { animation-delay: 0.2s; }
+.section:nth-child(3) { animation-delay: 0.3s; }
+.section:nth-child(4) { animation-delay: 0.4s; }
+.section:nth-child(5) { animation-delay: 0.5s; }
+
+/* Links hover effect */
+.link {
+    transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+}
+
+.link:hover {
+    color: #fff; /* Change text color on hover */
+    background-color: var(--primary-color); /* Change background color on hover */
+}
+
+/* Button hover effect */
+.primary-link, .secondary-link {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and shadow */
+}
+
+.primary-link:hover, .secondary-link:hover {
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+}
+
+/* Smooth scroll effect */
+html {
+    scroll-behavior: smooth; /* Enable smooth scrolling */
 }
